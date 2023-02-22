@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf8"?>
+<xtcommerceplugin>
+
+    <code>xt_consentmanager</code>
+    <version>1.0.1</version>
+    <type>law</type>
+
+    <title>consentmanager</title>
+    <description>consentmanager</description>
+    <icon>consentmanager.png</icon>
+
+    <developer>xt:Commerce</developer>
+    <url>https://www.xt-commerce.com</url>
+
+    <minimum_store_version>6.2.2</minimum_store_version>
+
+    <marketplace_link><![CDATA[]]></marketplace_link>
+    <documentation_link><![CDATA[]]></documentation_link>
+
+    <configuration>
+
+        <config>
+            <key>XT_CONSENTMANAGER_ACTIVATED</key>
+            <value>1</value>
+            <type>status</type>
+
+            <de>
+                <title><![CDATA[Aktiviert für Mandanten]]></title>
+            </de>
+            <en>
+                <title><![CDATA[Enable Consent]]></title>
+            </en>
+        </config>
+
+        <config>
+            <key>XT_CONSENTMANAGER_ID</key>
+            <value></value>
+            <type>textfield</type>
+            <de>
+                <title><![CDATA[CMP-ID (get your CMP-ID at <a href="https://www.consentmanager.net/">consentmanager.net</a> ) ]]></title>
+            </de>
+            <en>
+                <title><![CDATA[CMP-ID (get your CMP-ID at <a href="https://www.consentmanager.net/">consentmanager.net</a> )  ]]></title>
+            </en>
+        </config>
+
+        <config>
+            <key>XT_CONSENTMANAGER_MODE</key>
+            <value>1</value>
+            <type>dropdown</type>
+            <url>url_XT_CONSENTMANAGER_MODE</url>
+            <de>
+                <title>Blocking mode</title>
+            </de>
+            <en>
+                <title>Blocking Mode</title>
+            </en>
+        </config>
+
+        <config>
+            <key>XT_CONSENTMANAGER_CODE</key>
+            <value></value>
+            <type>textfield</type>
+            <de>
+                <title><![CDATA[Additional HTML code (optional)]]></title>
+            </de>
+            <en>
+                <title><![CDATA[Additional HTML code (optional)]]></title>
+            </en>
+        </config>
+
+
+        <config>
+            <key>XT_CONSENTMANAGER_UNINSTALL</key>
+            <value>0</value>
+            <type>hidden</type>
+            <de>
+                <title><![CDATA[XT_CONSENTMANAGER_UNINSTALL]]></title>
+            </de>
+            <en>
+                <title><![CDATA[XT_CONSENTMANAGER_UNINSTALL]]></title>
+            </en>
+        </config>
+
+  </configuration>
+
+    <plugin_code>
+
+        <code>
+            <hook>javascript.php:bottom</hook>
+            <phpcode><![CDATA[ 
+                if(XT_CONSENTMANAGER_ACTIVATED == '1'){ 
+                     include _SRV_WEBROOT. _SRV_WEB_PLUGINS.'xt_consentmanager/hooks/javascript.php_top.php';
+                }
+                 ]]></phpcode>
+            <order>0</order>
+            <active>1</active>
+        </code>
+
+        <code>
+            <hook>admin_dropdown.php:dropdown</hook>
+            <phpcode><![CDATA[ include _SRV_WEBROOT. _SRV_WEB_PLUGINS.'xt_consentmanager/hooks/admin_dropdown.php_dropdown.php'; ]]></phpcode>
+            <order>0</order>
+            <active>1</active>
+        </code>
+
+    </plugin_code>
+
+    <db_install><![CDATA[
+        include_once _SRV_WEBROOT . _SRV_WEB_PLUGINS. 'xt_consentmanager/installer/install.php';
+        ]]>
+    </db_install>
+
+    <db_uninstall><![CDATA[
+        include_once _SRV_WEBROOT . _SRV_WEB_PLUGINS. 'xt_consentmanager/installer/uninstall.php';
+        ]]>
+    </db_uninstall>
+
+    <minimumupdateversion>1.0.0</minimumupdateversion>
+    <db_update>
+        <!--update>
+            <version>1.0.0</version>
+            <to_version>1.0.1</to_version>
+            <code><![CDATA[// ]]> </code>
+        </update-->
+    </db_update>
+
+</xtcommerceplugin>
+<!-- pb version 1.0.0 -->

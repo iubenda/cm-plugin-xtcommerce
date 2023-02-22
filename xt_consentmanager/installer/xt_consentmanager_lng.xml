@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf8"?>
+<xtcommerceplugin>
+    <language_content>
+
+    <phrase>
+        <key>TEXT_XT_CONSENTMANAGER</key>
+        <class>both</class>
+        <de>
+            <value><![CDATA[consentmanager]]></value>
+        </de>
+        <en>
+            <value><![CDATA[consentmanager]]></value>
+        </en>
+    </phrase>
+
+    <phrase>
+        <key>XT_CONSENTMANAGER</key>
+        <class>both</class>
+        <de>
+            <value><![CDATA[consentmanager]]></value>
+        </de>
+        <en>
+            <value><![CDATA[consentmanager]]></value>
+        </en>
+    </phrase>
+
+   
+
+    <!-- plgbuilder row functions -->
+    <phrase>
+        <key>TEXT_xt_consentmanager_ROW_FNC_1</key>
+        <class>admin</class>
+        <de>
+            <value><![CDATA[row fnc 1]]></value>
+        </de>
+        <en>
+            <value><![CDATA[row fnc 1]]></value>
+        </en>
+    </phrase>
+
+        <phrase>
+            <key>TEXT_XT_COC_ACCEPT</key>
+            <class>both</class>
+            <de>
+                <value><![CDATA[Annehmen]]></value>
+            </de>
+            <en>
+                <value><![CDATA[Accept]]></value>
+            </en>
+        </phrase>
+
+        <phrase>
+            <key>TEXT_XT_COC_DENY</key>
+            <class>both</class>
+            <de>
+                <value><![CDATA[Ablehnen]]></value>
+            </de>
+            <en>
+                <value><![CDATA[Deny]]></value>
+            </en>
+        </phrase>
+
+        <phrase>
+            <key>TEXT_XT_COC_MORE_INFO</key>
+            <class>both</class>
+            <de>
+                <value><![CDATA[Weitere Informationen]]></value>
+            </de>
+            <en>
+                <value><![CDATA[Detailed Information]]></value>
+            </en>
+        </phrase>
+         <phrase>
+            <key>TEXT_TX_CONSENTMANAGER_AUTOMATIC</key>
+            <class>both</class>
+            <de>
+                <value><![CDATA[Automatische Sperre]]></value>
+            </de>
+            <en>
+                <value><![CDATA[Automatic Block]]></value>
+            </en>
+        </phrase>
+
+        <phrase>
+            <key>TEXT_XT_CONSENTMANAGER_SEMIAUTOMATIC</key>
+            <class>both</class>
+            <de>
+                <value><![CDATA[Halbautomatischer Block]]></value>
+            </de>
+            <en>
+                <value><![CDATA[Semi-Automatic Block]]></value>
+            </en>
+        </phrase>
+
+    <!-- plgbuilder db columns -->
+            
+            
+    </language_content>
+</xtcommerceplugin>
+<!-- pb version 1.0.0 -->

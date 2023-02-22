@@ -1,0 +1,1 @@
+$('head').prepend('<script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/'+window.XT_CONSENTMANAGER_ID+'.js" data-cmp-host="delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="22"></script>');
